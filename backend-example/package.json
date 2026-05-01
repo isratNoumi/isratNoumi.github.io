@@ -1,0 +1,40 @@
+{
+  "name": "portfolio-rag-backend",
+  "version": "1.0.0",
+  "description": "RAG backend with Vectra vector database for portfolio chatbot (no build tools required)",
+  "main": "server-vectra.js",
+  "scripts": {
+    "start": "node server-vectra.js",
+    "dev": "nodemon server-vectra.js",
+    "extract": "node scripts/extractContent.js",
+    "embed": "node scripts/embedPortfolio-vectra.js",
+    "test:vectra": "node server-vectra.js",
+    "test:gemini": "node scripts/testGemini.js",
+    "list:models": "node scripts/listGeminiModels.js",
+    "setup": "npm run extract && npm run embed"
+  },
+  "keywords": [
+    "rag",
+    "vectra",
+    "gemini",
+    "openai",
+    "chatbot",
+    "vector-database"
+  ],
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "openai": "^4.20.1",
+    "vectra": "^0.4.4",
+    "axios": "^1.6.2",
+    "pdf-parse": "^1.1.1",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

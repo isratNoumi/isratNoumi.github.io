@@ -37,8 +37,10 @@ function SkillsSection() {
       'Frontend': 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
       'Backend': 'linear-gradient(135deg, #34D399 0%, #10B981 100%)',
       'Database': 'linear-gradient(135deg, #6EE7B7 0%, #34D399 100%)',
-      'DevOps': 'linear-gradient(135deg, #0F172A 0%, #334155 100%)',
-      'AI/ML': 'linear-gradient(135deg, #10B981 0%, #0EA5E9 100%)'
+      // Updated DevOps to a teal/emerald gradient for better contrast
+      'DevOps': 'linear-gradient(135deg, #22D3EE 0%, #38BDF8 100%)',
+      // Optionally, brighten AI/ML if needed
+      'AI/ML': 'linear-gradient(135deg, #34D399 0%, #0EA5E9 100%)'
     }
     return colors[group] || 'linear-gradient(135deg, #10B981 0%, #059669 100%)'
   }

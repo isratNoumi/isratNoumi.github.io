@@ -45,7 +45,7 @@ function Home() {
               </div>
               <h3 className="feature-title">Database & Backend</h3>
               <p className="feature-description">
-                Expert in PostgreSQL, Supabase, and high-performance APIs for scalable data-driven applications
+                Expert in PostgreSQL, MySQL, Supabase, and high-performance APIs for scalable data-driven applications
               </p>
             </div>
           </div>
